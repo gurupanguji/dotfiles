@@ -11,6 +11,8 @@ filetype plugin on
 " Load an indent file for the detected file type.
 filetype indent on
 
+" This also works for the mac os. Unless you are using really old versions of
+" Mac, this is okay
 set fileformat=unix
 set encoding=UTF-8
 
