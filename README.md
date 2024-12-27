@@ -7,8 +7,10 @@ dot files for zsh and vim
 3. Install zsh-autosuggestions
 
 ```brew install zsh-autosuggestions```
+
 4. Then install zsh-syntax-highlighting
 
 ```brew install zsh-syntax-highlighting```
+
 5. Downlaod these dotfiles to home directory 
 6. Enjoy. 
