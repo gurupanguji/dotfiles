@@ -1,3 +1,14 @@
 # dotfiles
 dot files for zsh and vim 
-these should be installed only after installing oh-my-zsh and installing zsh-autosuggestions and zsh-syntax-highlighting ideally from brew. 
+
+# Steps
+1. Install [homebrew](https://brew.sh)
+2. Install [oh-my-zsh](https://ohmyz.sh)
+3. Install zsh-autosuggestions
+
+```brew install zsh-autosuggestions```
+4. Then install zsh-syntax-highlighting
+
+```brew install zsh-syntax-highlighting```
+5. Downlaod these dotfiles to home directory 
+6. Enjoy. 
