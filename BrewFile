@@ -1,0 +1,26 @@
+## 
+# BrewFile by gurupanguji
+#
+
+
+# Casks 
+cask 'google-chrome'
+cask 'raycast'
+
+# cask 'docker'
+# cask 'android-platform-tools'
+# cask 'bluebubbles'
+# cask 'google-cloud-sdk'
+cask 'font-hack-nerd-font' 
+cask 'textmate'
+cask 'netnewswire'
+cask 'signal'
+cask 'marsedit'
+
+# Packages
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+brew 'spaceship'
+brew 'eza'
+brew 'llm'
+# brew 'awscli'
