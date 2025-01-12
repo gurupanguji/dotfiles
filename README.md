@@ -13,14 +13,13 @@ dot files for zsh and vim
 ```brew install zsh-syntax-highlighting```
 
 5. Then install spaceship prompt
+
 ``` brew install spaceship ```
 
-6. Create the spaceship config file
+6. Now clone the github repo 
 
-``` touch .config/spaceship.zsh ```
-
-5. Downlaod these dotfiles to home directory 
-6. Enjoy. 
+7. Downlaod these dotfiles to home directory
+8. Enjoy. 
 
 # Terminal theme
 - https://github.com/carloscuesta/materialshell/tree/master/shell-color-themes#terminal
