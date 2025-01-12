@@ -14,3 +14,6 @@ dot files for zsh and vim
 
 5. Downlaod these dotfiles to home directory 
 6. Enjoy. 
+
+# Terminal theme
+- https://github.com/carloscuesta/materialshell/tree/master/shell-color-themes#terminal
