@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="materialshell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,6 +74,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/opt/spaceship/spaceship.zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -103,7 +105,90 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="eza -la"
-alias lt="eza --tree"
+# alias ls="eza -la --icons"
+# alias ldt="eza -D --tree -L 2 --icons"
+# alias lt="eza --tree -L 2 --icons"
 
-PROMPT='%n@%m %~ %# '
+# Enable aliases to be sudo’ed
+#   http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
+# alias sudo='sudo '
+
+_exists() {
+  command -v $1 > /dev/null 2>&1
+}
+
+# Avoid stupidity with trash-cli:
+# https://github.com/sindresorhus/trash-cli
+# or use default rm -i
+if _exists trash; then
+  alias rm='trash'
+fi
+
+# Just bcoz clr shorter than clear
+alias clr='clear'
+
+# Go to the /home/$USER (~) directory and clears window of your terminal
+alias q="~ && clear"
+
+# Folders Shortcuts
+[ -d ~/Downloads ]            && alias dl='cd ~/Downloads'
+[ -d ~/Desktop ]              && alias dt='cd ~/Desktop'
+[ -d ~/Code ]                 && alias pj='cd ~/Code'
+
+# Commands Shortcuts
+# alias e="$EDITOR"
+alias -- +x='chmod +x'
+alias x+='chmod +x'
+
+# Open aliases
+alias open='open_command'
+alias o='open'
+alias oo='open .'
+alias term='open -a iterm.app'
+
+# Run scripts
+alias update="source $DOTFILES/scripts/update"
+alias bootstap="source $DOTFILES/scripts/bootstrap"
+
+# Quick reload of zsh environment
+alias reload="source $HOME/.zshrc"
+
+# My IP
+alias myip='ifconfig | sed -En "s/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p"'
+
+# Show $PATH in readable view
+alias path='echo -e ${PATH//:/\\n}'
+
+# Download file with original filename
+alias get="curl -O -L"
+
+# Use tldr as help util
+if _exists tldr; then
+  alias help="tldr"
+fi
+
+alias git-root='cd $(git rev-parse --show-toplevel)'
+
+# Better ls with icons, tree view and more
+# https://github.com/eza-community/eza
+if _exists eza; then
+  unalias ls
+  alias ls='eza --icons --header --git'
+  alias lt='eza --icons --tree'
+  unalias l
+  alias l='ls -l'
+  alias la='ls -lAh'
+fi
+
+# cat with syntax highlighting
+# https://github.com/sharkdp/bat
+if _exists bat; then
+  # Run to list all themes:
+  #   bat --list-themes
+  export BAT_THEME='base16'
+  alias cat='bat'
+fi
+
+# PROMPT='%n@%m %~ %# '
+
+
