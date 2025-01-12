@@ -12,6 +12,13 @@ dot files for zsh and vim
 
 ```brew install zsh-syntax-highlighting```
 
+5. Then install spaceship prompt
+``` brew install spaceship ```
+
+6. Create the spaceship config file
+
+``` touch .config/spaceship.zsh ```
+
 5. Downlaod these dotfiles to home directory 
 6. Enjoy. 
 
