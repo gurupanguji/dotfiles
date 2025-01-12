@@ -29,7 +29,7 @@ SPACESHIP_DIR_TRUNC_REPO=false
 # spaceship add --before char vi_mode
 
 # Add git
-spaceship add git
+# spaceship add git
 SPACESHIP_GIT_STATUS_SHOW=true
 SPACESHIP_GIT_STATUS_ASYNC=true
 
