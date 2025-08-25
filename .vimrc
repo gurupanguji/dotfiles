@@ -35,7 +35,7 @@ set listchars=eol:.,tab:>-,trail:~,extends:>,precedes:<
 
 " Customize editor
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 set number
 set relativenumber
 set scrolloff=8
@@ -69,7 +69,7 @@ au BufRead,BufNewFile *.md
   \ setlocal textwidth=80
 
 " set colorscheme to slate
-colorscheme slate
+colorscheme elflord
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
