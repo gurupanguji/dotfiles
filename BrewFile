@@ -1,26 +1,38 @@
 ## 
 # BrewFile by gurupanguji
-#
+## 
 
 
 # Casks 
+## on all macs
 cask 'google-chrome'
-cask 'raycast'
-
-# cask 'docker'
-# cask 'android-platform-tools'
-# cask 'bluebubbles'
-# cask 'google-cloud-sdk'
-cask 'font-hack-nerd-font' 
+# cask 'raycast'
+cask 'alfred'
 cask 'textmate'
 cask 'netnewswire'
 cask 'signal'
-cask 'marsedit'
 
-# Packages
+## development macs
+# cask 'code-server'
+# cask 'zed'
+
+## desktop macs
+# cask 'bluebubbles'
+# cask 'android-platform-tools'
+# cask 'google-cloud-sdk'
+# cask 'docker'
+# cask 'orbstack'
+# cask 'marsedit'
+
+
+# Packages on all macs
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
 brew 'spaceship'
 brew 'eza'
 brew 'llm'
+brew 'fzf'
+
+## development macs
 # brew 'awscli'
+# brew zoxide
