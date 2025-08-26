@@ -69,7 +69,7 @@ au BufRead,BufNewFile *.md
   \ setlocal textwidth=80
 
 " set colorscheme to slate
-colorscheme elflord
+" colorscheme elflord
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
