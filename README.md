@@ -23,3 +23,4 @@ dot files for zsh and vim
 
 # Terminal theme
 - https://github.com/carloscuesta/materialshell/tree/master/shell-color-themes#terminal
+- my preferred color scheme is material dark
