@@ -36,6 +36,13 @@ set listchars=eol:.,tab:>-,trail:~,extends:>,precedes:<
 " Customize editor
 set cursorline
 " set cursorcolumn
+" set cursor blinking
+" Example: Blinking block in normal mode, blinking I-beam in insert mode
+let &t_EI = "\<Esc>[1 q" " Blinking block for Normal mode
+let &t_SI = "\<Esc>[5 q" " Blinking vertical bar (I-beam) for Insert mode
+
+" for graphical mode
+set guicursor=n-v-c:block-Cursor/lCursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,o:hor50-Cursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175,a:blinkwait200-blinkoff500-blinkon500-Cursor/lCursor
 set number
 set relativenumber
 set scrolloff=8
