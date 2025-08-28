@@ -1,38 +1,38 @@
-## 
-# BrewFile by gurupanguji
-## 
-
-
-# Casks 
-## on all macs
-cask 'google-chrome'
-# cask 'raycast'
-cask 'alfred'
-cask 'textmate'
-cask 'netnewswire'
-cask 'signal'
-
-## development macs
-# cask 'code-server'
-# cask 'zed'
-
-## desktop macs
-# cask 'bluebubbles'
-# cask 'android-platform-tools'
-# cask 'google-cloud-sdk'
-# cask 'docker'
-# cask 'orbstack'
-# cask 'marsedit'
-
-
-# Packages on all macs
-brew 'zsh-autosuggestions'
-brew 'zsh-syntax-highlighting'
-brew 'spaceship'
-brew 'eza'
-brew 'llm'
-brew 'fzf'
-
-## development macs
-# brew 'awscli'
-# brew zoxide
+tap "supabase/tap"
+brew "awscli"
+brew "code-server", restart_service: :changed
+brew "codex"
+brew "docker"
+brew "eza"
+brew "fzf"
+brew "node"
+brew "gemini-cli"
+brew "helix"
+brew "llm"
+brew "nvm"
+brew "pandoc"
+brew "pnpm"
+brew "spaceship"
+brew "speedtest-cli"
+brew "tmux"
+brew "zoxide"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "supabase/tap/supabase"
+cask "alfred"
+cask "android-platform-tools"
+cask "betterdisplay"
+cask "bluebubbles"
+cask "cursor"
+cask "gdisk"
+cask "google-chrome"
+cask "marsedit"
+cask "netnewswire"
+cask "obsidian"
+cask "orbstack"
+cask "orion"
+cask "signal"
+cask "textmate"
+cask "thebrowsercompany-dia"
+cask "zed"
+vscode "google.geminicodeassist"
